@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+/* shared styles */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>section {
+    margin-top: 130px;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.bgLight {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btnPrimary {
+    background-color: #FF900E;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.textDarkGray {
+    color: #131313;
+}
+
+.textGray {
+    color: #424242;
+}
+
+.textLightGray {
+    color: #727272;
+}
+
+.textOrange {
+    color: #FF900E;
+}
+
+
+
+
+/* Navigation style */
+.navigation {
+    justify-content: space-between;
+}
+
+.navigation,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.navTitle {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.navLink li {
+    list-style: none;
+}
+
+.navLink a {
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Navigation style close */
+
+/* Banner style started */
+.bannerContent {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bannerTitle {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.bannerDescription {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.bannerImg {
+    width: 100%;
+}
+
+
+
+/* Team style */
+
+
+.team {
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    gap: 70px;
+}
+
+.teamImg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+#quickList {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#ofOur,
+#feature {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.featureDescription {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* some facts style */
+.factContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.factCart {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+}
+
+/* Responsive */
+/* small device */
+@media screen and (max-width:576px) {
+
+    .navigation,
+    .navigation ul,
+    .team {
+        flex-direction: column;
+    }
+
+    .teamImg {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.loveFeatures {
+    display: flex;
+}
+
+/* medium device responsive */
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .navigation,
+    .team {
+        flex-direction: column;
+    }
+
+    .ourFeatures {
+        margin: 0 50px;
+    }
+}
